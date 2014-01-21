@@ -9,8 +9,8 @@ set :stage,  'production'
 # Don't declare `role :all`, it's a meta role
 #role :app, %w{deploy@example.com}
 role :web, %w{ 
-	54.197.241.173 
-	54.197.241.252
+	ubuntu@54.197.241.173 
+	ubuntu@54.197.241.252
 }
 
 #role :db,  %w{deploy@example.com}
