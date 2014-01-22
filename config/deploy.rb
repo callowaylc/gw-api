@@ -3,8 +3,9 @@ lock '3.1.0'
 
 set :application, 'gw-api'
 set :repo_url, 'git@github.com:callowaylc/gw-api.git'
+set :ssh_options, { :forward_agent => true }
 
-# Default branch is :master
+ # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
@@ -47,8 +48,8 @@ set :keep_releases, 5
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-set :stages, [ "staging", "production" ]
-set :default_stage, "production"
+#set :stages, [ "staging", "production" ]
+#set :default_stage, "production"
 
 namespace :deploy do
 
