@@ -21,7 +21,7 @@ set :user,   "ubuntu"
 set :rails_env,     "production"
 
 # deployment will be done via copy
-#set :deploy_via, :remote_cache
+set :deploy_via, :remote_cache
 
 # only keep the last 5 releases
 set :keep_releases, 5
