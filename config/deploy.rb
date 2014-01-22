@@ -3,7 +3,7 @@ lock '3.1.0'
 
 set :application, 'gw-api'
 set :repo_url, 'git@github.com:callowaylc/gw-api.git'
-set :ssh_options, { :forward_agent => true }
+#set :ssh_options, { :forward_agent => true }
 
  # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
@@ -21,7 +21,7 @@ set :user,   "ubuntu"
 set :rails_env,     "production"
 
 # deployment will be done via copy
-#set :deploy_via, :t
+#set :deploy_via, :remote_cache
 
 # only keep the last 5 releases
 set :keep_releases, 5
