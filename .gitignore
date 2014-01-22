@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
+# ignore current symlink repo
+/current
+
 # ignore database.yaml
 /config/database.yaml
