@@ -13,7 +13,6 @@ set :deploy_to, '/var/www/api'
 
 # Default value for :scm is :git
 set :scm,    :git
-set :branch, "master"
 
 # set server user
 set :user,   "ubuntu"
@@ -22,7 +21,7 @@ set :user,   "ubuntu"
 set :rails_env,     "production"
 
 # deployment will be done via copy
-set :deploy_via, :remote_cache
+#set :deploy_via, :t
 
 # only keep the last 5 releases
 set :keep_releases, 5
