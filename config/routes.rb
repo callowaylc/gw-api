@@ -1,5 +1,7 @@
 Api::Application.routes.draw do
-  get "player/index"
+  resources :tests
+
+  get "player/:type/:number", to: 'player#index'
   get "refresh/index"
   get "refresh/test"
   # The priority is based upon order of creation: first created -> highest priority.
