@@ -2,7 +2,7 @@ Api::Application.routes.draw do
   resources :tests
 
   get "player/:type/:number", to: 'player#index'
-  get "refresh/index"
+  get "refresh/:number",      to: 'refresh#index'
   get "refresh/test"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
