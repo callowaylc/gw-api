@@ -1,4 +1,5 @@
 Api::Application.routes.draw do
+  get "cache/refresh"
   resources :tests
 
   get "player/:type/:number", to: 'player#index'
