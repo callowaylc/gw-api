@@ -1,6 +1,5 @@
 Api::Application.routes.draw do
-  get "cache/refresh"
-  resources :tests
+  get "cache/purge"
 
   get "player/:type/:number", to: 'player#index'
   get "refresh/:number",      to: 'refresh#index'

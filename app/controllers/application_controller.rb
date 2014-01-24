@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
 
 	  		# obviously this sucks, will be abstracted later
 				@db = Mysql2::Client.new(
-				  host:     'ec2-184-73-50-189.compute-1.amazonaws.com',
+				  host:     'database',
 				  username: username,
 				  password: 'fe5180zz',
 				  database: database,

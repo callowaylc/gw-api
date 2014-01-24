@@ -8,10 +8,7 @@ set :stage,  'production'
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
 #role :app, %w{deploy@example.com}
-role :web, %w{ 
-	ubuntu@54.197.241.173 
-	ubuntu@54.197.241.252
-}
+role :web, %w{ web0 web1 } 
 
 #role :db,  %w{deploy@example.com}
 
