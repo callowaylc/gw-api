@@ -19,4 +19,4 @@
 /current
 
 # ignore database.yaml
-/config/database.yaml
+#/config/database.yaml

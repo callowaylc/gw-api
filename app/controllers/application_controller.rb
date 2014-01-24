@@ -53,7 +53,7 @@ class ApplicationController < ActionController::Base
   			}
   			id = db.last_id
   		else
-  			id = result.id
+  			id = result.to_a[0][0]
   		end
 
   		# finally we need to update key/value
