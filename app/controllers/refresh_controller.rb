@@ -1,9 +1,14 @@
+require 'purge'
+
 class RefreshController < ApplicationController
+  include Purge
+
   def index
   	@number = params[:number]
 
   	#set_concurrent_player
   	set_refresh_rate
+  	purge
   end
 
   private
