@@ -1,0 +1,3 @@
+#!/bin/bash
+RAILS_ROOT=/var/www/api RAILS_ENV=development /etc/init.d/unicorn restart
+
