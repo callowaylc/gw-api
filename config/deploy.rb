@@ -56,16 +56,14 @@ namespace :deploy do
 
   desc 'Restart application'
   task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
+    on roles(:web), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
 
       # restart unicorn server
-			on roles(:app) do |ignore|
       	execute "RAILS_ROOT=/var/www/api " +
                 "RAILS_ENV=development   " +
                 "/etc/init.d/unicorn restart"
-			end
     end
   end
 
