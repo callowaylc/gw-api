@@ -61,9 +61,12 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
 
       # restart unicorn server
-      	execute "RAILS_ROOT=/var/www/api " +
-                "RAILS_ENV=development   " +
+      begin
+	execute "RAILS_ROOT=/var/www/api " +
+                "RAILS_ENV=development " +
                 "/etc/init.d/unicorn restart"
+      rescue
+      end
     end
   end
 
