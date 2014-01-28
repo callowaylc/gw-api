@@ -4,9 +4,9 @@ module Purge
 		  	%w{ web0 web1 }.each do | ip |
 				c = Net::Telnet::new(
 				  "Host" => ip,
-				  "Port" => 4083
+				  "Port" => 8383
 				)
-				c.puts 'sudo service varnish restart'
+				c.puts 'varnish'
 				c.close
 
 		  	end
