@@ -1,3 +1,5 @@
+require 'net/telnet'
+
 module Purge
 	def purge
 		#begin
