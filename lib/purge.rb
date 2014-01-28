@@ -1,6 +1,6 @@
 module Purge
 	def purge
-		begin
+		#begin
 		  	%w{ web0 web1 }.each do | ip |
 				c = Net::Telnet::new(
 				  "Host" => ip,
@@ -10,7 +10,7 @@ module Purge
 				c.close
 
 		  	end
-		 rescue
-		 end
+		 #rescue 
+		 #end
 	end
 end
